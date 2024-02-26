@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tree {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+  }
+  
+  .tree-list {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    transform-origin: 50% 0;
+  }
+  
+  .tree-list-item {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .tree-list-item::before, .tree-list-item::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-top: 2px solid rgb(136, 146, 158);
+    width: calc(50% + 1px);
+    height: 17px;
+    height: var(--connector-height, 17px);
+  }
+  
+  .tree-list-item::after {
+    left: auto;
+    right: 0;
+    border-left: 2px solid rgb(136, 146, 158);
+    height: var(--connector-height, 16px);
+  }
+  
+  .tree-list-item.only-child::before {
+    display: none;
+  }
+
+  .tree-list-item:last-child::after {
+
+  }
+  
+  .tree-list-item.answer.only-child::after {
+    border-left: 2px solid rgb(136, 146, 158);
+  }
+  
+  .tree-list-item:first-child::before, .tree-list-item:last-child::after {
+    border: none;
+  }
+  
+  .tree-list-item:last-child::before {
+    border-right: 2px solid rgb(136, 146, 158);
+    border-radius: 0 5px 0 0;
+  }
+  
+  .tree-list-item:first-child::after {
+    border-radius: 5px 0 0 0;
+  }
+  
+  .tree-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: calc(50% - 1px);
+    border-left: 2px solid rgb(136, 146, 158);
+    width: 0;
+    height: 36px;
+    height: var(--connector-height, 36px);
+  }
+
+  .tree-list > .question > .tree-list::before {
+    height: 16px;
+  }
+  
+  .tree-list-item .config {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #666;
+    font-family: Lato, arial, verdana, tahoma;
+    
+    font-size: 12px;
+    display: inline-block;
+    border-radius: 2px;
+    transition: all 0.5s;
+    padding-bottom: 12px;
+    position: relative;
+    border: 1px solid transparent;
+    cursor: default;
+    outline: 2px solid rgb(10, 28, 51);
+    user-select: none;
+  }
+  
+  .tree .tree-list-item a:hover, .tree .tree-list-item a:hover + .tree-list .tree-list-item .config {
+    background: #c8e4f8!important;
+    color: #000;
+    border-color: #94a0b4;
+  }
+  
+  .tree-list-item a:hover + .tree-list .tree-list-item::after,
+  .tree-list-item a:hover + .tree-list .tree-list-item::before,
+  .tree-list-item a:hover + .tree-list::before,
+  .tree-list-item a:hover + .tree-list .tree-list::before {
+    border-color: #94a0b4;
+  }
+
+  .add, .remove, .add-answer {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0.75;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .add, .remove {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    color: white;
+    z-index: 2;
+    border: 1px solid #2E3132;
+    transform: translate(-50%, 50%);
+  }
+
+  .only-child > div > .config > .remove {
+    display: none;
+  }
+  
+  .add {
+    background: #8AD9F7;
+    color: #005F83;
+    bottom: -22px;
+  }
+
+  .add-answer {
+    background-color: #005F83;
+    margin: 0 auto 4px auto;
+    color: white;
+    line-height: 0.75;
+    z-index: 2;
+    border: 1px solid #2E3132;
+    position: relative;
+  }
+
+.add-answer:before {
+    content: "";
+    position: absolute;
+    bottom: calc(100% + 1px);
+    left: calc(50% - 0.5px);
+    border-left: 1px solid #005F83;
+    width: 0;
+    height: 6px;
+    z-index:-2;
+}
+
+  .add-answer:after {
+    content: "+";
+    font-size: 16px;
+    color: #8AD9F7
+  }
+
+  
+  .remove {
+    background: #F14444;
+    bottom: 100%;
+  }
+  
+  .add:after {
+    content: "+";
+    font-size: 16px
+  }
+  
+  .remove:after {
+    content: "-";
+    font-size: 16px;
+    transform: translateY(-1px);
+  }
+  
+  .tree-list-item > div > .config {
+    background: #CAD1D7;
+    color: #2E3132;
+  }
+  
+  .tree-list-item.question > div > .config {
+    background: #C2C0FF;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  
+  /* CAD1D7 */
+  
+  .tree-list-item.answer > div > .config {
+    background: #B0E6FA;
+  }
+  
+  
+  li:only-child {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .text {
+    padding: 4px 16px;
+    display: block;
+    cursor: text;
+    border: none;
+    background: transparent;
+    text-align: center;
+    margin-bottom: 4px;
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+    border-radius: 4px;
+    min-width: 120px;
+  }
+
+  .editable-container:first-child > .text {
+    margin-top: 2px;
+    margin-top: 12px;
+}
+
+  .editable-container:last-child > .text {
+      margin-bottom: 5px;
+  }
+  
+  .reveal .text, .text:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+
+  .tree .launchpad > div > .config > .text:hover::placeholder, .tree .roadblock > div > .config > .text:hover::placeholder {
+    color: #2E3132!important;
+  }
+
+  .tree .launchpad > div > .config > .text:focus::placeholder {
+   /* visibility: hidden!important; */
+   color: rgb(136, 146, 158)!important;
+  }
+
+  .text:focus {
+      background: white;
+  }
+  
+  .answer > div > .config {
+    padding-bottom: 10px!important;
+  }
+  
+  .answer > div > .config > .add, :not(.question) > div > .config > .add {
+    display: none;
+  }
+  
+  .tree .roadblock > div > .config {
+      background: #F36262;
+      color: black;
+  }
+  
+  .tree .roadblock > div > .config > input, .tree .launchpad > div > .config > input, .tree .roadblock > div > .config > input::placeholder, .tree .launchpad > div > .config > input::placeholder {
+      color: white!important;
+  }
+  
+  .tree .launchpad > div > .config {
+    background: #55A85E;
+    color: white;
+  }
+  
+  [contenteditable][placeholder]:empty::before {
+      content: attr(placeholder);
+      color: #525252; 
+  }
+  
+  [contenteditable][placeholder]:empty:focus::before {
+      content: "";
+  }
+  
+  /* .tree-list > .tree-list-item > div > .config select {
+    display: none;
+  } */
+  
+  .tree select {
+      margin-bottom: 8px;
+      margin-top: 4px;
+  }
+  
+  .tree .select {
+    min-width: 120px;
+      max-width: 180px!important;
+      margin: 4px auto 8px auto!important;
+      z-index: 99;
+      color: #2E3132;
+  }
+
+ .tree .select select {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .arrow {
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"><path fill="none" d="M0 0h12v12H0z"></path><path fill="rgb(136, 146, 158)" d="M10.9 4.25L6.39 8.82a.52.52 0 01-.73 0L1.15 4.25a.52.52 0 010-.73l.36-.37a.52.52 0 01.73 0L6 7l3.81-3.85a.52.52 0 01.73 0l.36.37a.52.52 0 010 .73z"></path></svg>');
+        width: 12px;
+        height: 12px;
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+  }
+
+  .answer > .arrow {
+    transform: translate(-50%);
+}
+
+.tree > .tree-list > .tree-list-item::before, 
+.tree-list-item.answer:not(.only-child) > div > .arrow,
+.tree > .tree-list > .tree-list-item > div > .arrow:first-of-type {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+.list-container::before {
+  z-index: -1;
+}
+
+.panel .list-container::before {
+  z-index: 1;
+}
+
+.panel .add, .panel .remove, .panel .add-answer, .panel .select {
+  display: none;
+}
+
+
+.tree-list-enter-active {
+  overflow: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, width 0.3s ease;
+}
+
+.tree-list-leave-active {
+  overflow: hidden;
+  transition: opacity 0.2s ease, transform 0.2s ease, width 0.3s ease;
+}
+
+.tree-list-enter-from:before {
+  overflow: hidden;
+  width: 0;
+  height: 2px;
+}
+
+.tree-list-enter-active:before {
+  overflow: hidden;
+  transition: width 0.15s ease-in 0.15s, height 0.05s ease-out 0.3s;
+}
+
+.tree-list-leave-active:before {
+  overflow: hidden;
+  transition: width 0.15s ease-out 0.1s, height 0.1s ease-in;
+}
+
+.tree-list-enter-from, .tree-list-leave-to /* .list-leave-active in <2.1.8 */ {
+  opacity: 0;
+  width: 0;
+}
+
+.only-child > div > .config > .add-answer {
+  margin-bottom: 0;
+}
+
+
+.tree-list-item.only-child:not(.question):not(.answer) > div > .config {
+  z-index: -1;
+}
+
+
+
+
+.tree-list-enter-from > div > .config {
+  opacity: 0;
+  transform: scale(0.8);
+  transform-origin: 50% 0;
+}
+
+.tree-list-enter-active > div > .config {
+  z-index: -1;
+  transition: opacity 0.1s ease 0.5s, transform 0.15s ease 0.55s;
+}
+
+.tree-list-enter-from > div > .tree-list {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.tree-list-enter-active > div > .tree-list {
+  transition: opacity 0s ease 0.75s, transform 1.5s ease-out 0.75s;
+}
+
+.tree-list-enter-active > .tree-list {
+  transition: transform 0.15s ease 0.75s;
+}
+
+
+.answer > .arrow {
+  transform-origin: 50% 100%;
+}
+
+.tree-list-enter-active > .arrow {
+  transition: transform 0.1s ease 0.75s;
+}
+
+.tree-list-enter-from > .arrow {
+  transform: scaleY(0);
+}
+
+#app > .tree-list {
+  padding: 80px 8px 0 8px;
+  max-width: calc(100vw - 16px);
+  position: relative;
+}
+
+.answer.answer2 > div > .config {
+  padding-bottom: 12px!important;
+}
+
+.answer > div > .config .input-wrap {
+  margin-bottom: 6px;
+  margin-top: 12px
+}
+
+.answer > div > .config .text {
+  border: 1px solid #005F83;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  margin-bottom: -1px; /* Overlap borders */
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.answer > div > .config .input-wrap .editable-container:first-child .text {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+.answer > div > .config .input-wrap .editable-container:last-child .text {
+margin-bottom: 0; /* Reset for the last element */
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.remove-wrap {
+  overflow: hidden;
+  transition: width 0.25s ease, transform 0.25s ease, opacity 0.25s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  
+  opacity: 0;
+  transform: scale(0);
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.editable-container:hover .remove-wrap {
+  width: 24px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+.remove.mini {
+  position: static;
+  transform: scale(0);
+  width: 14px;
+  height: 14px;
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.input-wrap:hover .remove {
+  transform: none;
+  opacity: 1;
+}
+
+
+
+
+
+
+.answer > div > .config .input-wrap .editable-container {
+  border: 1px solid #005F83;
+  margin-bottom: -1px;
+  display: flex;
+  align-items: center;
+  min-width: 120px;
+  
+}
+
+.answer > div > .config .input-wrap .editable {
+  border: none;
+  margin-bottom: 0;
+  min-width: 0;
+}
+
+.answer > div > .config .input-wrap .editable-container:first-child {
+border-top-left-radius: 4px;
+border-top-right-radius: 4px;
+}
+
+.answer > div > .config .input-wrap .editable-container:last-child {
+margin-bottom: 0; /* Reset for the last element */
+border-bottom-left-radius: 4px;
+border-bottom-right-radius: 4px;
+}
+
+.answer.highlight-removal .config {
+  background-color: #F36262!important;
+}
+
+.tree-list-item > div > .tree-list {
+  --connector-height: 17px;
+}
+
+.tree-list-item.answer > div > .tree-list {
+  --connector-height: 36px;
+}
+
+#app > .tree-list > .tree-list-item > div > .tree-list {
+  --connector-height: 17px!important;
+}
+
+
+.tree-list-item .config {
+  padding: 4px 12px;
+}
+
+.add-answer, .remove {
+  transition: height 0.2s ease, opacity 0.2s ease, transform 0.2s ease;
+  transform-origin: 50% 50%;
+  opacity: 0;
+  transform: scale(0);
+  height: 0;
+}
+
+.remove {
+  transform: translate(-50%, 50%) scale(0);
+}
+
+
+.config:hover > .add-answer, .config:hover > .remove {
+  opacity: 1;
+  transform: scale(1);
+  height: 20px;
+}
+
+.config:hover > .remove {
+  transform: translate(-50%, 50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tree-list-item.start {
+  left: 50%;
+  top: 0;
+  position: absolute;
+  transform: translateX(-50%);
+  padding-top: 0;
+}
+
+.tree-list-item.start > div > .config {
+  width: 200px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  background: #6F6CE8;
+  color: white;
+  padding-bottom: 8px;
+  z-index: 2;
+}
+
+.tree-list-item.start:after {
+  display: none;
+}
+
+#app > .tree-list::before {
+  top: 60px;
+  height: 40px
+}
+
+.panel .question > div > .tree-list::before {
+  height: calc(var(--connector-height, 17px) + 3px)
+}
+
+.answer {
+  /* --connector-height: 16px; */
+}
+
+.panel .answer::after {
+  border-radius: 0;
+}
+
+.panel .tree-list-item {
+  padding-top: 4px
+}
+
+.panel .tree-list-item::after {
+  height: calc(var(--connector-height, 17px) - 16px)
+}
+
+.panel .tree-list::before {
+  height: calc(var(--connector-height, 36px) - 16px)
+}
+
+
+
+.panel .question > div > .config {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.panel .answer > div > .config .input-wrap {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.panel .answer > div > .config {
+  padding-bottom: 4px!important
+}
+
+.panel > .scroll-container > .tree-list::before {
+  display: none;
+}
+
+.panel > .scroll-container > .tree-list > .question::before {
+    border-top: none;
+    top: 20px;
+    border-radius: 0
+}
+
+.panel .start .config {
+  height: 36px!important;
+  width: 160px!important;
+  padding-bottom: 6px!important;
+  font-size: 20px!important;
+}
+
+.panel > .scroll-container > .tree-list > .tree-list-item:not(.start) {
+  padding-top: 42px;
+}

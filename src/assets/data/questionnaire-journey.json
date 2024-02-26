@@ -1,0 +1,343 @@
+{
+  "questions": {
+      "q1": {
+          "text": "Will this resource manage key accounts?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              }],
+              [{
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      },
+      "q2": {
+          "text": "Will this resource own the customer relationship?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              }],
+              [{
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      },
+      "q3": {
+          "text": "Select work country",
+          "type": "dropdown",
+          "items": [
+              [{
+                  "label": "United States",
+                  "value": "United States"
+              }]
+          ]
+      },
+      "q4": {
+          "text": "Will Resource Perform work under day-to-day supervision of Cisco Engagement manager?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              }],
+              [{
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      },
+      "q5": {
+          "text": "Did you pre-identify the candidate?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              },
+              {
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      },
+      "q6": {
+          "text": "Is this a backfill position, or for a regular role?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Regular Role",
+                  "value": "Regular Role"
+              }],
+              [{
+                  "label": "Backfill",
+                  "value": "Backfill"
+              }]
+          ]
+      },
+      "q7": {
+          "text": "Is the intention of offering resource Cisco employment in the event of technical and cultural fit?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              },
+              {
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      },
+      "q8": {
+          "text": "Please provide the scope of work planned by selecting how you will measure the success for outsource work",
+          "type": "dropdown",
+          "ref": "75442486-0878-440c-9db1-a7006c25a39f",
+          "items": [
+              [{
+                  "label": "Milestone",
+                  "value": "Milestone"
+              },
+              {
+                  "label": "Capacity/Capabilities Model",
+                  "value": "Capacity/Capabilities Model"
+              },
+              {
+                  "label": "SLA & KPIs",
+                  "value": "SLA & KPIs"
+              }]
+          ]
+      },
+      "q9": {
+          "text": "Are you planning to build features based on EPIC or user stories?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              },
+              {
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      },
+      "q10": {
+          "text": "Will the SOW financials exceed $500k?",
+          "type": "radio",
+          "items": [
+              [{
+                  "label": "Yes",
+                  "value": "Yes"
+              },
+              {
+                  "label": "No",
+                  "value": "No"
+              }]
+          ]
+      }
+  },
+  "roadblocks": {
+      "rb1": "Managing/owning customer key accounts and Relationship are preserved for regular roles",
+      "rb2": "Managing/owning customer key accounts and Relationship are preserved for regular roles"
+  },
+  "launchpads": {
+      "lp1": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp2": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp3": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp4": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp5": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp6": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp7": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp8": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp9": {
+          "type": "Launchpad",
+          "details": ""
+      },
+      "lp10": {
+          "type": "Launchpad",
+          "details": ""
+      }
+  },
+  "journey": {
+      "start": {
+          "q": "q1",
+          "type": "question",
+          "path": [
+              {
+                  "option": "Yes",
+                  "type": "roadblock",
+                  "rb": "rb1"
+              },
+              {
+                  "option": "No",
+                  "q": "q2",
+                  "type": "question",
+                  "path": [
+                      {
+                          "option": "Yes",
+                          "type": "roadblock",
+                          "rb": "rb2"
+                      },
+                      {
+                          "option": "No",
+                          "q": "q3",
+                          "type": "question",
+                          "path": [
+                              {
+                                  "option": "United States",
+                                  "q": "q4",
+                                  "type": "question",
+                                  "path": [
+                                      {
+                                          "option": "Yes",
+                                          "q": "q5",
+                                          "type": "question",
+                                          "path": [
+                                              {
+                                                  "option": "Yes",
+                                                  "q": "q6",
+                                                  "type": "question",
+                                                  "path": [
+                                                      {
+                                                          "option": "Regular Role",
+                                                          "type": "launchpad",
+                                                          "lp": "lp1"
+                                                      },
+                                                      {
+                                                          "option": "Backfill",
+                                                          "q": "q7",
+                                                          "type": "question",
+                                                          "path": [
+                                                              {
+                                                                  "option": "Yes",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp2"
+                                                              },
+                                                              {
+                                                                  "option": "No",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp3"
+                                                              }
+                                                          ]
+                                                      }
+                                                  ]
+                                              },
+                                              {
+                                                  "option": "No",
+                                                  "q": "q6",
+                                                  "type": "question",
+                                                  "path": [
+                                                      {
+                                                          "option": "Regular Role",
+                                                          "type": "launchpad",
+                                                          "lp": "lp4"
+                                                      },
+                                                      {
+                                                          "option": "Backfill",
+                                                          "q": "q7",
+                                                          "type": "question",
+                                                          "path": [
+                                                              {
+                                                                  "option": "Yes",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp5"
+                                                              },
+                                                              {
+                                                                  "option": "No",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp6"
+                                                              }
+                                                          ]
+                                                      }
+                                                  ]
+                                              }
+                                          ]
+                                      },
+                                      {
+                                          "option": "No",
+                                          "q": "q8",
+                                          "type": "question",
+                                          "path": [
+                                              {
+                                                  "option": "75442486-0878-440c-9db1-a7006c25a39f",
+                                                  "q": "q9",
+                                                  "type": "question",
+                                                  "path": [
+                                                      {
+                                                          "option": "Yes",
+                                                          "q": "q10",
+                                                          "type": "question",
+                                                          "path": [
+                                                              {
+                                                                  "option": "Yes",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp7"
+                                                              },
+                                                              {
+                                                                  "option": "No",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp8"
+                                                              }
+                                                          ]
+                                                      },
+                                                      {
+                                                          "option": "No",
+                                                          "q": "q10",
+                                                          "type": "question",
+                                                          "path": [
+                                                              {
+                                                                  "option": "Yes",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp9"
+                                                              },
+                                                              {
+                                                                  "option": "No",
+                                                                  "type": "launchpad",
+                                                                  "lp": "lp10"
+                                                              }
+                                                          ]
+                                                      }
+                                                  ]
+                                              }
+                                          ]
+                                      }
+                                  ]
+                              }
+                          ]
+                      }
+                  ]
+              }
+          ]
+      }
+  }
+}

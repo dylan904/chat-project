@@ -1,0 +1,1276 @@
+/* Green */
+$green: #5ea700;
+$green-1: #8fbe39;
+$green-2: #f4fbe8;
+$green-3: #238544;
+$green-4: #68da8f;
+$green-5: #34bead;
+$green-accessibility: #445a1b;
+$button-green: #448500;
+
+/* Blue */
+$blue-primary: #034fe5;
+$blue-active: #023eb3;
+$blue-pressed: #02308b;
+$blue-disabled: #b1cbfe;
+
+$blue-1: #4fa7ff;
+$blue-2: #b5dfff;
+$blue-3: #ecf5ff;
+$blue-4: #fbfdff;
+$blue-5: #0352a0;
+$blue-gray: #f5f6fa;
+$font-accent: #001b38;
+$muted-gray: #9fb3ce;
+
+/* Purple */
+$purple-1: #4c49dd;
+$purple-2: #7a77ff;
+$purple-3: #e8e8ff;
+
+/* Orange */
+$orange-1: #db850a;
+$orange-2: #f4ab43;
+$orange-3: #ffe2b8;
+$orange-accessibility: #6a4006;
+
+/* Red */
+$red-1: #be3a34;
+$red-2: #ffdad8;
+$red-accessibility: #842924;
+$pink: #fc5dd9;
+
+/* Neutral */
+$black-2: #091b1f;
+$gray-1: #4f5053;
+$gray-2: #ccc;
+$gray-3: #f1f1f1;
+$gray-disabled: #EFF1F1;
+$gray-border: #C4C7C7;
+$font-primary: #1b1b1b;
+$font-print: #3c3c3c;
+$muted-gray: #9fb3ce;
+
+$m-3-white: #ffffff;
+$m-3-black: #000000;
+$m-3-sys-light-primary: #005db8;
+$m-3-sys-light-on-primary: #ffffff;
+$m-3-sys-light-primary-container: #d6e3ff;
+$m-3-sys-light-on-primary-container: #001b3e;
+$m-3-sys-light-primary-fixed: #d6e3ff;
+$m-3-sys-light-on-primary-fixed: #001b3e;
+$m-3-sys-light-primary-fixed-dim: #aac7ff;
+$m-3-sys-light-on-primary-fixed-variant: #00458d;
+$m-3-sys-light-secondary: #565f71;
+$m-3-sys-light-on-secondary: #ffffff;
+$m-3-sys-light-secondary-container: #dae2f9;
+$m-3-sys-light-on-secondary-container: #131c2b;
+$m-3-sys-light-secondary-fixed: #dae2f9;
+$m-3-sys-light-on-secondary-fixed: #131c2b;
+$m-3-sys-light-secondary-fixed-dim: #bec6dc;
+$m-3-sys-light-on-secondary-fixed-variant: #3e4759;
+$m-3-sys-light-tertiary: #006a67;
+$m-3-sys-light-on-tertiary: #ffffff;
+$m-3-sys-light-tertiary-container: #6ff7f2;
+$m-3-sys-light-on-tertiary-container: #00201f;
+$m-3-sys-light-tertiary-fixed: #6ff7f2;
+$m-3-sys-light-on-tertiary-fixed: #00201f;
+$m-3-sys-light-tertiary-fixed-dim: #4edad5;
+$m-3-sys-light-on-tertiary-fixed-variant: #00504e;
+$m-3-sys-light-error: #ba1a1a;
+$m-3-sys-light-on-error: #ffffff;
+$m-3-sys-light-error-container: #ffdad6;
+$m-3-sys-light-on-error-container: #410002;
+$m-3-sys-light-outline: #74777f;
+$m-3-sys-light-background: #fdfbff;
+$m-3-sys-light-on-background: #1a1b1e;
+$m-3-sys-light-surface: #faf9fd;
+$m-3-sys-light-on-surface: #1a1b1e;
+$m-3-sys-light-surface-variant: #e0e2ec;
+$m-3-sys-light-on-surface-variant: #44474e;
+$m-3-sys-light-inverse-surface: #2f3033;
+$m-3-sys-light-inverse-on-surface: #f1f0f4;
+$m-3-sys-light-inverse-primary: #aac7ff;
+$m-3-sys-light-shadow: #000000;
+$m-3-sys-light-surface-tint: #005db8;
+$m-3-sys-light-outline-variant: #c4c6d0;
+$m-3-sys-light-scrim: #000000;
+$m-3-sys-light-surface-container-highest: #e3e2e6;
+$m-3-sys-light-surface-container-high: #e9e7ec;
+$m-3-sys-light-surface-container: #efedf1;
+$m-3-sys-light-surface-container-low: #f4f3f7;
+$m-3-sys-light-surface-container-lowest: #ffffff;
+$m-3-sys-light-surface-bright: #faf9fd;
+$m-3-sys-light-surface-dim: #dad9dd;
+$m-3-sys-dark-primary: #aac7ff;
+$m-3-sys-dark-on-primary: #002f64;
+$m-3-sys-dark-primary-container: #00458d;
+$m-3-sys-dark-on-primary-container: #d6e3ff;
+$m-3-sys-dark-primary-fixed: #d6e3ff;
+$m-3-sys-dark-on-primary-fixed: #001b3e;
+$m-3-sys-dark-primary-fixed-dim: #aac7ff;
+$m-3-sys-dark-on-primary-fixed-variant: #00458d;
+$m-3-sys-dark-secondary: #bec6dc;
+$m-3-sys-dark-on-secondary: #283141;
+$m-3-sys-dark-secondary-container: #3e4759;
+$m-3-sys-dark-on-secondary-container: #dae2f9;
+$m-3-sys-dark-secondary-fixed: #dae2f9;
+$m-3-sys-dark-on-secondary-fixed: #131c2b;
+$m-3-sys-dark-secondary-fixed-dim: #bec6dc;
+$m-3-sys-dark-on-secondary-fixed-variant: #3e4759;
+$m-3-sys-dark-tertiary: #4edad5;
+$m-3-sys-dark-on-tertiary: #003735;
+$m-3-sys-dark-tertiary-container: #00504e;
+$m-3-sys-dark-on-tertiary-container: #6ff7f2;
+$m-3-sys-dark-tertiary-fixed: #6ff7f2;
+$m-3-sys-dark-on-tertiary-fixed: #00201f;
+$m-3-sys-dark-tertiary-fixed-dim: #4edad5;
+$m-3-sys-dark-on-tertiary-fixed-variant: #00504e;
+$m-3-sys-dark-error: #ffb4ab;
+$m-3-sys-dark-on-error: #690005;
+$m-3-sys-dark-error-container: #93000a;
+$m-3-sys-dark-on-error-container: #ffdad6;
+$m-3-sys-dark-outline: #8e9099;
+$m-3-sys-dark-background: #1a1b1e;
+$m-3-sys-dark-on-background: #e3e2e6;
+$m-3-sys-dark-surface: #121316;
+$m-3-sys-dark-on-surface: #c7c6ca;
+$m-3-sys-dark-surface-variant: #44474e;
+$m-3-sys-dark-on-surface-variant: #c4c6d0;
+$m-3-sys-dark-inverse-surface: #e3e2e6;
+$m-3-sys-dark-inverse-on-surface: #1a1b1e;
+$m-3-sys-dark-inverse-primary: #005db8;
+$m-3-sys-dark-shadow: #000000;
+$m-3-sys-dark-surface-tint: #aac7ff;
+$m-3-sys-dark-outline-variant: #44474e;
+$m-3-sys-dark-scrim: #000000;
+$m-3-sys-dark-surface-container-highest: #343538;
+$m-3-sys-dark-surface-container-high: #292a2d;
+$m-3-sys-dark-surface-container: #1e1f23;
+$m-3-sys-dark-surface-container-low: #1a1b1e;
+$m-3-sys-dark-surface-container-lowest: #0d0e11;
+$m-3-sys-dark-surface-bright: #38393c;
+$m-3-sys-dark-surface-dim: #121316;
+$m-3-ref-primary-primary-0: #000000;
+$m-3-ref-primary-primary-10: #001b3e;
+$m-3-ref-primary-primary-20: #002f64;
+$m-3-ref-primary-primary-30: #00458d;
+$m-3-ref-primary-primary-40: #005db8;
+$m-3-ref-primary-primary-50: #0e75e3;
+$m-3-ref-primary-primary-60: #3f90ff;
+$m-3-ref-primary-primary-70: #7aacff;
+$m-3-ref-primary-primary-80: #aac7ff;
+$m-3-ref-primary-primary-90: #d6e3ff;
+$m-3-ref-primary-primary-95: #ecf0ff;
+$m-3-ref-primary-primary-99: #fdfbff;
+$m-3-ref-primary-primary-100: #ffffff;
+$m-3-ref-primary-primary-4: #000e25;
+$m-3-ref-primary-primary-5: #00102a;
+$m-3-ref-primary-primary-6: #00132f;
+$m-3-ref-primary-primary-12: #001f45;
+$m-3-ref-primary-primary-17: #002958;
+$m-3-ref-primary-primary-22: #00346c;
+$m-3-ref-primary-primary-24: #003874;
+$m-3-ref-primary-primary-25: #003a78;
+$m-3-ref-primary-primary-35: #0051a2;
+$m-3-ref-primary-primary-87: #c9daff;
+$m-3-ref-primary-primary-92: #dfe8ff;
+$m-3-ref-primary-primary-94: #e8eeff;
+$m-3-ref-primary-primary-96: #f0f3ff;
+$m-3-ref-primary-primary-98: #f9f9ff;
+$m-3-ref-secondary-secondary-0: #000000;
+$m-3-ref-secondary-secondary-10: #131c2b;
+$m-3-ref-secondary-secondary-20: #283141;
+$m-3-ref-secondary-secondary-30: #3e4759;
+$m-3-ref-secondary-secondary-40: #565f71;
+$m-3-ref-secondary-secondary-50: #6e778a;
+$m-3-ref-secondary-secondary-60: #8891a5;
+$m-3-ref-secondary-secondary-70: #a2abc0;
+$m-3-ref-secondary-secondary-80: #bec6dc;
+$m-3-ref-secondary-secondary-90: #dae2f9;
+$m-3-ref-secondary-secondary-95: #ecf0ff;
+$m-3-ref-secondary-secondary-99: #fdfbff;
+$m-3-ref-secondary-secondary-100: #ffffff;
+$m-3-ref-secondary-secondary-4: #050e1d;
+$m-3-ref-secondary-secondary-5: #081120;
+$m-3-ref-secondary-secondary-6: #0a1323;
+$m-3-ref-secondary-secondary-12: #172030;
+$m-3-ref-secondary-secondary-17: #212a3b;
+$m-3-ref-secondary-secondary-22: #2c3546;
+$m-3-ref-secondary-secondary-24: #30394a;
+$m-3-ref-secondary-secondary-25: #333c4d;
+$m-3-ref-secondary-secondary-35: #4a5365;
+$m-3-ref-secondary-secondary-87: #d1daf0;
+$m-3-ref-secondary-secondary-92: #dfe8fe;
+$m-3-ref-secondary-secondary-94: #e8eeff;
+$m-3-ref-secondary-secondary-96: #f0f3ff;
+$m-3-ref-secondary-secondary-98: #f9f9ff;
+$m-3-ref-tertiary-tertiary-0: #000000;
+$m-3-ref-tertiary-tertiary-10: #00201f;
+$m-3-ref-tertiary-tertiary-20: #003735;
+$m-3-ref-tertiary-tertiary-30: #00504e;
+$m-3-ref-tertiary-tertiary-40: #006a67;
+$m-3-ref-tertiary-tertiary-50: #008582;
+$m-3-ref-tertiary-tertiary-60: #00a29e;
+$m-3-ref-tertiary-tertiary-70: #21beba;
+$m-3-ref-tertiary-tertiary-80: #4edad5;
+$m-3-ref-tertiary-tertiary-90: #6ff7f2;
+$m-3-ref-tertiary-tertiary-95: #affffb;
+$m-3-ref-tertiary-tertiary-99: #f2fffd;
+$m-3-ref-tertiary-tertiary-100: #ffffff;
+$m-3-ref-tertiary-tertiary-4: #001110;
+$m-3-ref-tertiary-tertiary-5: #001413;
+$m-3-ref-tertiary-tertiary-6: #001716;
+$m-3-ref-tertiary-tertiary-12: #002423;
+$m-3-ref-tertiary-tertiary-17: #00302e;
+$m-3-ref-tertiary-tertiary-22: #003c3a;
+$m-3-ref-tertiary-tertiary-24: #00413f;
+$m-3-ref-tertiary-tertiary-25: #004341;
+$m-3-ref-tertiary-tertiary-35: #005d5a;
+$m-3-ref-tertiary-tertiary-87: #66eee9;
+$m-3-ref-tertiary-tertiary-92: #76fdf7;
+$m-3-ref-tertiary-tertiary-94: #9afffa;
+$m-3-ref-tertiary-tertiary-96: #c2fffb;
+$m-3-ref-tertiary-tertiary-98: #e3fffd;
+$m-3-ref-error-error-0: #000000;
+$m-3-ref-error-error-10: #410002;
+$m-3-ref-error-error-20: #690005;
+$m-3-ref-error-error-30: #93000a;
+$m-3-ref-error-error-40: #ba1a1a;
+$m-3-ref-error-error-50: #de3730;
+$m-3-ref-error-error-60: #ff5449;
+$m-3-ref-error-error-70: #ff897d;
+$m-3-ref-error-error-80: #ffb4ab;
+$m-3-ref-error-error-90: #ffdad6;
+$m-3-ref-error-error-95: #ffedea;
+$m-3-ref-error-error-99: #fffbff;
+$m-3-ref-error-error-100: #ffffff;
+$m-3-ref-error-error-4: #280001;
+$m-3-ref-error-error-5: #2d0001;
+$m-3-ref-error-error-6: #310001;
+$m-3-ref-error-error-12: #490002;
+$m-3-ref-error-error-17: #5c0004;
+$m-3-ref-error-error-22: #710005;
+$m-3-ref-error-error-24: #790006;
+$m-3-ref-error-error-25: #7e0007;
+$m-3-ref-error-error-35: #a80710;
+$m-3-ref-error-error-87: #ffcfc9;
+$m-3-ref-error-error-92: #ffe2de;
+$m-3-ref-error-error-94: #ffe9e6;
+$m-3-ref-error-error-96: #fff0ee;
+$m-3-ref-error-error-98: #fff8f7;
+$m-3-ref-neutral-neutral-0: #000000;
+$m-3-ref-neutral-neutral-4: #0d0e11;
+$m-3-ref-neutral-neutral-6: #121316;
+$m-3-ref-neutral-neutral-10: #1a1b1e;
+$m-3-ref-neutral-neutral-12: #1e1f23;
+$m-3-ref-neutral-neutral-17: #292a2d;
+$m-3-ref-neutral-neutral-20: #2f3033;
+$m-3-ref-neutral-neutral-22: #343538;
+$m-3-ref-neutral-neutral-24: #38393c;
+$m-3-ref-neutral-neutral-30: #46474a;
+$m-3-ref-neutral-neutral-40: #5e5e62;
+$m-3-ref-neutral-neutral-50: #77777a;
+$m-3-ref-neutral-neutral-60: #909094;
+$m-3-ref-neutral-neutral-70: #ababaf;
+$m-3-ref-neutral-neutral-80: #c7c6ca;
+$m-3-ref-neutral-neutral-87: #dad9dd;
+$m-3-ref-neutral-neutral-90: #e3e2e6;
+$m-3-ref-neutral-neutral-92: #e9e7ec;
+$m-3-ref-neutral-neutral-94: #efedf1;
+$m-3-ref-neutral-neutral-95: #f1f0f4;
+$m-3-ref-neutral-neutral-96: #f4f3f7;
+$m-3-ref-neutral-neutral-99: #fdfbff;
+$m-3-ref-neutral-neutral-100: #ffffff;
+$m-3-ref-neutral-neutral-5: #101114;
+$m-3-ref-neutral-neutral-25: #3a3b3f;
+$m-3-ref-neutral-neutral-35: #525256;
+$m-3-ref-neutral-neutral-98: #faf9fd;
+$m-3-ref-neutral-variant-neutral-variant-0: #000000;
+$m-3-ref-neutral-variant-neutral-variant-10: #181c22;
+$m-3-ref-neutral-variant-neutral-variant-20: #2d3038;
+$m-3-ref-neutral-variant-neutral-variant-30: #44474e;
+$m-3-ref-neutral-variant-neutral-variant-40: #5b5e66;
+$m-3-ref-neutral-variant-neutral-variant-50: #74777f;
+$m-3-ref-neutral-variant-neutral-variant-60: #8e9099;
+$m-3-ref-neutral-variant-neutral-variant-70: #a9abb4;
+$m-3-ref-neutral-variant-neutral-variant-80: #c4c6d0;
+$m-3-ref-neutral-variant-neutral-variant-90: #e0e2ec;
+$m-3-ref-neutral-variant-neutral-variant-95: #eff0fa;
+$m-3-ref-neutral-variant-neutral-variant-99: #fdfbff;
+$m-3-ref-neutral-variant-neutral-variant-100: #ffffff;
+$m-3-ref-neutral-variant-neutral-variant-4: #0b0e15;
+$m-3-ref-neutral-variant-neutral-variant-5: #0e1117;
+$m-3-ref-neutral-variant-neutral-variant-6: #10131a;
+$m-3-ref-neutral-variant-neutral-variant-12: #1c2027;
+$m-3-ref-neutral-variant-neutral-variant-17: #272a31;
+$m-3-ref-neutral-variant-neutral-variant-22: #32353c;
+$m-3-ref-neutral-variant-neutral-variant-24: #363941;
+$m-3-ref-neutral-variant-neutral-variant-25: #383b43;
+$m-3-ref-neutral-variant-neutral-variant-35: #4f525a;
+$m-3-ref-neutral-variant-neutral-variant-87: #d8dae3;
+$m-3-ref-neutral-variant-neutral-variant-92: #e6e8f1;
+$m-3-ref-neutral-variant-neutral-variant-94: #ecedf7;
+$m-3-ref-neutral-variant-neutral-variant-96: #f1f3fd;
+$m-3-ref-neutral-variant-neutral-variant-98: #f9f9ff;
+$m-3-key-colors-primary: #0573e1;
+$m-3-key-colors-tertiary: #4bb5b1;
+$m-3-source-seed: #0573e1;
+$m-3-surfaces-light-surface-1: linear-gradient(
+    to left,
+    rgba(103, 80, 164, 0.05),
+    rgba(103, 80, 164, 0.05)
+  ),
+  linear-gradient(to left, #fef7ff, #fef7ff);
+$m-3-surfaces-light-surface-2: linear-gradient(
+    to left,
+    rgba(103, 80, 164, 0.08),
+    rgba(103, 80, 164, 0.08)
+  ),
+  linear-gradient(to left, #fef7ff, #fef7ff);
+$m-3-surfaces-light-surface-3: linear-gradient(
+    to left,
+    rgba(103, 80, 164, 0.11),
+    rgba(103, 80, 164, 0.11)
+  ),
+  linear-gradient(to left, #fef7ff, #fef7ff);
+$m-3-surfaces-light-surface-4: linear-gradient(
+    to left,
+    rgba(103, 80, 164, 0.12),
+    rgba(103, 80, 164, 0.12)
+  ),
+  linear-gradient(to left, #fef7ff, #fef7ff);
+$m-3-surfaces-light-surface-5: linear-gradient(
+    to left,
+    rgba(103, 80, 164, 0.14),
+    rgba(103, 80, 164, 0.14)
+  ),
+  linear-gradient(to left, #fef7ff, #fef7ff);
+$m-3-surfaces-dark-surface-1: linear-gradient(
+    to left,
+    rgba(208, 188, 255, 0.05),
+    rgba(208, 188, 255, 0.05)
+  ),
+  linear-gradient(to left, #141218, #141218);
+$m-3-surfaces-dark-surface-2: linear-gradient(
+    to left,
+    rgba(208, 188, 255, 0.08),
+    rgba(208, 188, 255, 0.08)
+  ),
+  linear-gradient(to left, #141218, #141218);
+$m-3-surfaces-dark-surface-3: linear-gradient(
+    to left,
+    rgba(208, 188, 255, 0.11),
+    rgba(208, 188, 255, 0.11)
+  ),
+  linear-gradient(to left, #141218, #141218);
+$m-3-surfaces-dark-surface-4: linear-gradient(
+    to left,
+    rgba(208, 188, 255, 0.12),
+    rgba(208, 188, 255, 0.12)
+  ),
+  linear-gradient(to left, #141218, #141218);
+$m-3-surfaces-dark-surface-5: linear-gradient(
+    to left,
+    rgba(208, 188, 255, 0.14),
+    rgba(208, 188, 255, 0.14)
+  ),
+  linear-gradient(to left, #141218, #141218);
+$m-3-state-layers-light-primary-opacity-0-08: rgba(103, 80, 164, 0.08);
+$m-3-state-layers-light-primary-opacity-0-12: rgba(103, 80, 164, 0.12);
+$m-3-state-layers-light-primary-opacity-0-16: rgba(103, 80, 164, 0.16);
+$m-3-state-layers-light-on-primary-opacity-0-08: rgba(255, 255, 255, 0.08);
+$m-3-state-layers-light-on-primary-opacity-0-12: rgba(255, 255, 255, 0.12);
+$m-3-state-layers-light-on-primary-opacity-0-16: rgba(255, 255, 255, 0.16);
+$m-3-state-layers-light-primary-container-opacity-0-08: rgba(
+  234,
+  221,
+  255,
+  0.08
+);
+$m-3-state-layers-light-primary-container-opacity-0-12: rgba(
+  234,
+  221,
+  255,
+  0.12
+);
+$m-3-state-layers-light-primary-container-opacity-0-16: rgba(
+  234,
+  221,
+  255,
+  0.16
+);
+$m-3-state-layers-light-on-primary-container-opacity-0-08: rgba(
+  33,
+  0,
+  93,
+  0.08
+);
+$m-3-state-layers-light-on-primary-container-opacity-0-12: rgba(
+  33,
+  0,
+  93,
+  0.12
+);
+$m-3-state-layers-light-on-primary-container-opacity-0-16: rgba(
+  33,
+  0,
+  93,
+  0.16
+);
+$m-3-state-layers-light-primary-fixed-opacity-0-08: rgba(234, 221, 255, 0.08);
+$m-3-state-layers-light-primary-fixed-opacity-0-12: rgba(234, 221, 255, 0.12);
+$m-3-state-layers-light-primary-fixed-opacity-0-16: rgba(234, 221, 255, 0.16);
+$m-3-state-layers-light-on-primary-fixed-opacity-0-08: rgba(33, 0, 93, 0.08);
+$m-3-state-layers-light-on-primary-fixed-opacity-0-12: rgba(33, 0, 93, 0.12);
+$m-3-state-layers-light-on-primary-fixed-opacity-0-16: rgba(33, 0, 93, 0.16);
+$m-3-state-layers-light-primary-fixed-dim-opacity-0-08: rgba(
+  208,
+  188,
+  255,
+  0.08
+);
+$m-3-state-layers-light-primary-fixed-dim-opacity-0-12: rgba(
+  208,
+  188,
+  255,
+  0.12
+);
+$m-3-state-layers-light-primary-fixed-dim-opacity-0-16: rgba(
+  208,
+  188,
+  255,
+  0.16
+);
+$m-3-state-layers-light-on-primary-fixed-variant-opacity-0-08: rgba(
+  79,
+  55,
+  139,
+  0.08
+);
+$m-3-state-layers-light-on-primary-fixed-variant-opacity-0-12: rgba(
+  79,
+  55,
+  139,
+  0.12
+);
+$m-3-state-layers-light-on-primary-fixed-variant-opacity-0-16: rgba(
+  79,
+  55,
+  139,
+  0.16
+);
+$m-3-state-layers-light-secondary-opacity-0-08: rgba(98, 91, 113, 0.08);
+$m-3-state-layers-light-secondary-opacity-0-12: rgba(98, 91, 113, 0.12);
+$m-3-state-layers-light-secondary-opacity-0-16: rgba(98, 91, 113, 0.16);
+$m-3-state-layers-light-on-secondary-opacity-0-08: rgba(255, 255, 255, 0.08);
+$m-3-state-layers-light-on-secondary-opacity-0-12: rgba(255, 255, 255, 0.12);
+$m-3-state-layers-light-on-secondary-opacity-0-16: rgba(255, 255, 255, 0.16);
+$m-3-state-layers-light-secondary-container-opacity-0-08: rgba(
+  232,
+  222,
+  248,
+  0.08
+);
+$m-3-state-layers-light-secondary-container-opacity-0-12: rgba(
+  232,
+  222,
+  248,
+  0.12
+);
+$m-3-state-layers-light-secondary-container-opacity-0-16: rgba(
+  232,
+  222,
+  248,
+  0.16
+);
+$m-3-state-layers-light-on-secondary-container-opacity-0-08: rgba(
+  29,
+  25,
+  43,
+  0.08
+);
+$m-3-state-layers-light-on-secondary-container-opacity-0-12: rgba(
+  29,
+  25,
+  43,
+  0.12
+);
+$m-3-state-layers-light-on-secondary-container-opacity-0-16: rgba(
+  29,
+  25,
+  43,
+  0.16
+);
+$m-3-state-layers-light-secondary-fixed-opacity-0-08: rgba(232, 222, 248, 0.08);
+$m-3-state-layers-light-secondary-fixed-opacity-0-12: rgba(232, 222, 248, 0.12);
+$m-3-state-layers-light-secondary-fixed-opacity-0-16: rgba(232, 222, 248, 0.16);
+$m-3-state-layers-light-on-secondary-fixed-opacity-0-08: rgba(29, 25, 43, 0.08);
+$m-3-state-layers-light-on-secondary-fixed-opacity-0-12: rgba(29, 25, 43, 0.12);
+$m-3-state-layers-light-on-secondary-fixed-opacity-0-16: rgba(29, 25, 43, 0.16);
+$m-3-state-layers-light-secondary-fixed-dim-opacity-0-08: rgba(
+  204,
+  194,
+  220,
+  0.08
+);
+$m-3-state-layers-light-secondary-fixed-dim-opacity-0-12: rgba(
+  204,
+  194,
+  220,
+  0.12
+);
+$m-3-state-layers-light-secondary-fixed-dim-opacity-0-16: rgba(
+  204,
+  194,
+  220,
+  0.16
+);
+$m-3-state-layers-light-on-secondary-fixed-variant-opacity-0-08: rgba(
+  74,
+  68,
+  88,
+  0.08
+);
+$m-3-state-layers-light-on-secondary-fixed-variant-opacity-0-12: rgba(
+  74,
+  68,
+  88,
+  0.12
+);
+$m-3-state-layers-light-on-secondary-fixed-variant-opacity-0-16: rgba(
+  74,
+  68,
+  88,
+  0.16
+);
+$m-3-state-layers-light-tertiary-opacity-0-08: rgba(125, 82, 96, 0.08);
+$m-3-state-layers-light-tertiary-opacity-0-12: rgba(125, 82, 96, 0.12);
+$m-3-state-layers-light-tertiary-opacity-0-16: rgba(125, 82, 96, 0.16);
+$m-3-state-layers-light-on-tertiary-opacity-0-08: rgba(255, 255, 255, 0.08);
+$m-3-state-layers-light-on-tertiary-opacity-0-12: rgba(255, 255, 255, 0.12);
+$m-3-state-layers-light-on-tertiary-opacity-0-16: rgba(255, 255, 255, 0.16);
+$m-3-state-layers-light-tertiary-container-opacity-0-08: rgba(
+  255,
+  216,
+  228,
+  0.08
+);
+$m-3-state-layers-light-tertiary-container-opacity-0-12: rgba(
+  255,
+  216,
+  228,
+  0.12
+);
+$m-3-state-layers-light-tertiary-container-opacity-0-16: rgba(
+  255,
+  216,
+  228,
+  0.16
+);
+$m-3-state-layers-light-on-tertiary-container-opacity-0-08: rgba(
+  49,
+  17,
+  29,
+  0.08
+);
+$m-3-state-layers-light-on-tertiary-container-opacity-0-12: rgba(
+  49,
+  17,
+  29,
+  0.12
+);
+$m-3-state-layers-light-on-tertiary-container-opacity-0-16: rgba(
+  49,
+  17,
+  29,
+  0.16
+);
+$m-3-state-layers-light-tertiary-fixed-opacity-0-08: rgba(255, 216, 228, 0.08);
+$m-3-state-layers-light-tertiary-fixed-opacity-0-12: rgba(255, 216, 228, 0.12);
+$m-3-state-layers-light-tertiary-fixed-opacity-0-16: rgba(255, 216, 228, 0.16);
+$m-3-state-layers-light-on-tertiary-fixed-opacity-0-08: rgba(49, 17, 29, 0.08);
+$m-3-state-layers-light-on-tertiary-fixed-opacity-0-12: rgba(49, 17, 29, 0.12);
+$m-3-state-layers-light-on-tertiary-fixed-opacity-0-16: rgba(49, 17, 29, 0.16);
+$m-3-state-layers-light-tertiary-fixed-dim-opacity-0-08: rgba(
+  239,
+  184,
+  200,
+  0.08
+);
+$m-3-state-layers-light-tertiary-fixed-dim-opacity-0-12: rgba(
+  239,
+  184,
+  200,
+  0.12
+);
+$m-3-state-layers-light-tertiary-fixed-dim-opacity-0-16: rgba(
+  239,
+  184,
+  200,
+  0.16
+);
+$m-3-state-layers-light-on-tertiary-fixed-variant-opacity-0-08: rgba(
+  99,
+  59,
+  72,
+  0.08
+);
+$m-3-state-layers-light-on-tertiary-fixed-variant-opacity-0-12: rgba(
+  99,
+  59,
+  72,
+  0.12
+);
+$m-3-state-layers-light-on-tertiary-fixed-variant-opacity-0-16: rgba(
+  99,
+  59,
+  72,
+  0.16
+);
+$m-3-state-layers-light-error-opacity-0-08: rgba(179, 38, 30, 0.08);
+$m-3-state-layers-light-error-opacity-0-12: rgba(179, 38, 30, 0.12);
+$m-3-state-layers-light-error-opacity-0-16: rgba(179, 38, 30, 0.16);
+$m-3-state-layers-light-on-error-opacity-0-08: rgba(255, 255, 255, 0.08);
+$m-3-state-layers-light-on-error-opacity-0-12: rgba(255, 255, 255, 0.12);
+$m-3-state-layers-light-on-error-opacity-0-16: rgba(255, 255, 255, 0.16);
+$m-3-state-layers-light-error-container-opacity-0-08: rgba(249, 222, 220, 0.08);
+$m-3-state-layers-light-error-container-opacity-0-12: rgba(249, 222, 220, 0.12);
+$m-3-state-layers-light-error-container-opacity-0-16: rgba(249, 222, 220, 0.16);
+$m-3-state-layers-light-on-error-container-opacity-0-08: rgba(65, 14, 11, 0.08);
+$m-3-state-layers-light-on-error-container-opacity-0-12: rgba(65, 14, 11, 0.12);
+$m-3-state-layers-light-on-error-container-opacity-0-16: rgba(65, 14, 11, 0.16);
+$m-3-state-layers-light-outline-opacity-0-08: rgba(121, 116, 126, 0.08);
+$m-3-state-layers-light-outline-opacity-0-12: rgba(121, 116, 126, 0.12);
+$m-3-state-layers-light-outline-opacity-0-16: rgba(121, 116, 126, 0.16);
+$m-3-state-layers-light-background-opacity-0-08: rgba(254, 247, 255, 0.08);
+$m-3-state-layers-light-background-opacity-0-12: rgba(254, 247, 255, 0.12);
+$m-3-state-layers-light-background-opacity-0-16: rgba(254, 247, 255, 0.16);
+$m-3-state-layers-light-on-background-opacity-0-08: rgba(29, 27, 32, 0.08);
+$m-3-state-layers-light-on-background-opacity-0-12: rgba(29, 27, 32, 0.12);
+$m-3-state-layers-light-on-background-opacity-0-16: rgba(29, 27, 32, 0.16);
+$m-3-state-layers-light-surface-opacity-0-08: rgba(254, 247, 255, 0.08);
+$m-3-state-layers-light-surface-opacity-0-12: rgba(254, 247, 255, 0.12);
+$m-3-state-layers-light-surface-opacity-0-16: rgba(254, 247, 255, 0.16);
+$m-3-state-layers-light-on-surface-opacity-0-08: rgba(29, 27, 32, 0.08);
+$m-3-state-layers-light-on-surface-opacity-0-12: rgba(29, 27, 32, 0.12);
+$m-3-state-layers-light-on-surface-opacity-0-16: rgba(29, 27, 32, 0.16);
+$m-3-state-layers-light-surface-variant-opacity-0-08: rgba(231, 224, 236, 0.08);
+$m-3-state-layers-light-surface-variant-opacity-0-12: rgba(231, 224, 236, 0.12);
+$m-3-state-layers-light-surface-variant-opacity-0-16: rgba(231, 224, 236, 0.16);
+$m-3-state-layers-light-on-surface-variant-opacity-0-08: rgba(73, 69, 79, 0.08);
+$m-3-state-layers-light-on-surface-variant-opacity-0-12: rgba(73, 69, 79, 0.12);
+$m-3-state-layers-light-on-surface-variant-opacity-0-16: rgba(73, 69, 79, 0.16);
+$m-3-state-layers-light-inverse-surface-opacity-0-08: rgba(50, 47, 53, 0.08);
+$m-3-state-layers-light-inverse-surface-opacity-0-12: rgba(50, 47, 53, 0.12);
+$m-3-state-layers-light-inverse-surface-opacity-0-16: rgba(50, 47, 53, 0.16);
+$m-3-state-layers-light-inverse-on-surface-opacity-0-08: rgba(
+  245,
+  239,
+  247,
+  0.08
+);
+$m-3-state-layers-light-inverse-on-surface-opacity-0-12: rgba(
+  245,
+  239,
+  247,
+  0.12
+);
+$m-3-state-layers-light-inverse-on-surface-opacity-0-16: rgba(
+  245,
+  239,
+  247,
+  0.16
+);
+$m-3-state-layers-light-inverse-primary-opacity-0-08: rgba(208, 188, 255, 0.08);
+$m-3-state-layers-light-inverse-primary-opacity-0-12: rgba(208, 188, 255, 0.12);
+$m-3-state-layers-light-inverse-primary-opacity-0-16: rgba(208, 188, 255, 0.16);
+$m-3-state-layers-light-shadow-opacity-0-08: rgba(0, 0, 0, 0.08);
+$m-3-state-layers-light-shadow-opacity-0-12: rgba(0, 0, 0, 0.12);
+$m-3-state-layers-light-shadow-opacity-0-16: rgba(0, 0, 0, 0.16);
+$m-3-state-layers-light-surface-tint-opacity-0-08: rgba(103, 80, 164, 0.08);
+$m-3-state-layers-light-surface-tint-opacity-0-12: rgba(103, 80, 164, 0.12);
+$m-3-state-layers-light-surface-tint-opacity-0-16: rgba(103, 80, 164, 0.16);
+$m-3-state-layers-light-outline-variant-opacity-0-08: rgba(202, 196, 208, 0.08);
+$m-3-state-layers-light-outline-variant-opacity-0-12: rgba(202, 196, 208, 0.12);
+$m-3-state-layers-light-outline-variant-opacity-0-16: rgba(202, 196, 208, 0.16);
+$m-3-state-layers-light-scrim-opacity-0-08: rgba(0, 0, 0, 0.08);
+$m-3-state-layers-light-scrim-opacity-0-12: rgba(0, 0, 0, 0.12);
+$m-3-state-layers-light-scrim-opacity-0-16: rgba(0, 0, 0, 0.16);
+$m-3-state-layers-light-surface-container-highest-opacity-0-08: rgba(
+  230,
+  224,
+  233,
+  0.08
+);
+$m-3-state-layers-light-surface-container-highest-opacity-0-12: rgba(
+  230,
+  224,
+  233,
+  0.12
+);
+$m-3-state-layers-light-surface-container-highest-opacity-0-16: rgba(
+  230,
+  224,
+  233,
+  0.16
+);
+$m-3-state-layers-light-surface-container-high-opacity-0-08: rgba(
+  236,
+  230,
+  240,
+  0.08
+);
+$m-3-state-layers-light-surface-container-high-opacity-0-12: rgba(
+  236,
+  230,
+  240,
+  0.12
+);
+$m-3-state-layers-light-surface-container-high-opacity-0-16: rgba(
+  236,
+  230,
+  240,
+  0.16
+);
+$m-3-state-layers-light-surface-container-opacity-0-08: rgba(
+  243,
+  237,
+  247,
+  0.08
+);
+$m-3-state-layers-light-surface-container-opacity-0-12: rgba(
+  243,
+  237,
+  247,
+  0.12
+);
+$m-3-state-layers-light-surface-container-opacity-0-16: rgba(
+  243,
+  237,
+  247,
+  0.16
+);
+$m-3-state-layers-light-surface-container-low-opacity-0-08: rgba(
+  247,
+  242,
+  250,
+  0.08
+);
+$m-3-state-layers-light-surface-container-low-opacity-0-12: rgba(
+  247,
+  242,
+  250,
+  0.12
+);
+$m-3-state-layers-light-surface-container-low-opacity-0-16: rgba(
+  247,
+  242,
+  250,
+  0.16
+);
+$m-3-state-layers-light-surface-container-lowest-opacity-0-08: rgba(
+  255,
+  255,
+  255,
+  0.08
+);
+$m-3-state-layers-light-surface-container-lowest-opacity-0-12: rgba(
+  255,
+  255,
+  255,
+  0.12
+);
+$m-3-state-layers-light-surface-container-lowest-opacity-0-16: rgba(
+  255,
+  255,
+  255,
+  0.16
+);
+$m-3-state-layers-light-surface-bright-opacity-0-08: rgba(254, 247, 255, 0.08);
+$m-3-state-layers-light-surface-bright-opacity-0-12: rgba(254, 247, 255, 0.12);
+$m-3-state-layers-light-surface-bright-opacity-0-16: rgba(254, 247, 255, 0.16);
+$m-3-state-layers-light-surface-dim-opacity-0-08: rgba(222, 216, 225, 0.08);
+$m-3-state-layers-light-surface-dim-opacity-0-12: rgba(222, 216, 225, 0.12);
+$m-3-state-layers-light-surface-dim-opacity-0-16: rgba(222, 216, 225, 0.16);
+$m-3-state-layers-dark-primary-opacity-0-08: rgba(208, 188, 255, 0.08);
+$m-3-state-layers-dark-primary-opacity-0-12: rgba(208, 188, 255, 0.12);
+$m-3-state-layers-dark-primary-opacity-0-16: rgba(208, 188, 255, 0.16);
+$m-3-state-layers-dark-on-primary-opacity-0-08: rgba(56, 30, 114, 0.08);
+$m-3-state-layers-dark-on-primary-opacity-0-12: rgba(56, 30, 114, 0.12);
+$m-3-state-layers-dark-on-primary-opacity-0-16: rgba(56, 30, 114, 0.16);
+$m-3-state-layers-dark-primary-container-opacity-0-08: rgba(79, 55, 139, 0.08);
+$m-3-state-layers-dark-primary-container-opacity-0-12: rgba(79, 55, 139, 0.12);
+$m-3-state-layers-dark-primary-container-opacity-0-16: rgba(79, 55, 139, 0.16);
+$m-3-state-layers-dark-on-primary-container-opacity-0-08: rgba(
+  234,
+  221,
+  255,
+  0.08
+);
+$m-3-state-layers-dark-on-primary-container-opacity-0-12: rgba(
+  234,
+  221,
+  255,
+  0.12
+);
+$m-3-state-layers-dark-on-primary-container-opacity-0-16: rgba(
+  234,
+  221,
+  255,
+  0.16
+);
+$m-3-state-layers-dark-primary-fixed-opacity-0-08: rgba(234, 221, 255, 0.08);
+$m-3-state-layers-dark-primary-fixed-opacity-0-12: rgba(234, 221, 255, 0.12);
+$m-3-state-layers-dark-primary-fixed-opacity-0-16: rgba(234, 221, 255, 0.16);
+$m-3-state-layers-dark-on-primary-fixed-opacity-0-08: rgba(33, 0, 93, 0.08);
+$m-3-state-layers-dark-on-primary-fixed-opacity-0-12: rgba(33, 0, 93, 0.12);
+$m-3-state-layers-dark-on-primary-fixed-opacity-0-16: rgba(33, 0, 93, 0.16);
+$m-3-state-layers-dark-primary-fixed-dim-opacity-0-08: rgba(
+  208,
+  188,
+  255,
+  0.08
+);
+$m-3-state-layers-dark-primary-fixed-dim-opacity-0-12: rgba(
+  208,
+  188,
+  255,
+  0.12
+);
+$m-3-state-layers-dark-primary-fixed-dim-opacity-0-16: rgba(
+  208,
+  188,
+  255,
+  0.16
+);
+$m-3-state-layers-dark-on-primary-fixed-variant-opacity-0-08: rgba(
+  79,
+  55,
+  139,
+  0.08
+);
+$m-3-state-layers-dark-on-primary-fixed-variant-opacity-0-12: rgba(
+  79,
+  55,
+  139,
+  0.12
+);
+$m-3-state-layers-dark-on-primary-fixed-variant-opacity-0-16: rgba(
+  79,
+  55,
+  139,
+  0.16
+);
+$m-3-state-layers-dark-secondary-opacity-0-08: rgba(204, 194, 220, 0.08);
+$m-3-state-layers-dark-secondary-opacity-0-12: rgba(204, 194, 220, 0.12);
+$m-3-state-layers-dark-secondary-opacity-0-16: rgba(204, 194, 220, 0.16);
+$m-3-state-layers-dark-on-secondary-opacity-0-08: rgba(51, 45, 65, 0.08);
+$m-3-state-layers-dark-on-secondary-opacity-0-12: rgba(51, 45, 65, 0.12);
+$m-3-state-layers-dark-on-secondary-opacity-0-16: rgba(51, 45, 65, 0.16);
+$m-3-state-layers-dark-secondary-container-opacity-0-08: rgba(74, 68, 88, 0.08);
+$m-3-state-layers-dark-secondary-container-opacity-0-12: rgba(74, 68, 88, 0.12);
+$m-3-state-layers-dark-secondary-container-opacity-0-16: rgba(74, 68, 88, 0.16);
+$m-3-state-layers-dark-on-secondary-container-opacity-0-08: rgba(
+  232,
+  222,
+  248,
+  0.08
+);
+$m-3-state-layers-dark-on-secondary-container-opacity-0-12: rgba(
+  232,
+  222,
+  248,
+  0.12
+);
+$m-3-state-layers-dark-on-secondary-container-opacity-0-16: rgba(
+  232,
+  222,
+  248,
+  0.16
+);
+$m-3-state-layers-dark-secondary-fixed-opacity-0-08: rgba(232, 222, 248, 0.08);
+$m-3-state-layers-dark-secondary-fixed-opacity-0-12: rgba(232, 222, 248, 0.12);
+$m-3-state-layers-dark-secondary-fixed-opacity-0-16: rgba(232, 222, 248, 0.16);
+$m-3-state-layers-dark-on-secondary-fixed-opacity-0-08: rgba(29, 25, 43, 0.08);
+$m-3-state-layers-dark-on-secondary-fixed-opacity-0-12: rgba(29, 25, 43, 0.12);
+$m-3-state-layers-dark-on-secondary-fixed-opacity-0-16: rgba(29, 25, 43, 0.16);
+$m-3-state-layers-dark-secondary-fixed-dim-opacity-0-08: rgba(
+  204,
+  194,
+  220,
+  0.08
+);
+$m-3-state-layers-dark-secondary-fixed-dim-opacity-0-12: rgba(
+  204,
+  194,
+  220,
+  0.12
+);
+$m-3-state-layers-dark-secondary-fixed-dim-opacity-0-16: rgba(
+  204,
+  194,
+  220,
+  0.16
+);
+$m-3-state-layers-dark-on-secondary-fixed-variant-opacity-0-08: rgba(
+  74,
+  68,
+  88,
+  0.08
+);
+$m-3-state-layers-dark-on-secondary-fixed-variant-opacity-0-12: rgba(
+  74,
+  68,
+  88,
+  0.12
+);
+$m-3-state-layers-dark-on-secondary-fixed-variant-opacity-0-16: rgba(
+  74,
+  68,
+  88,
+  0.16
+);
+$m-3-state-layers-dark-tertiary-opacity-0-08: rgba(239, 184, 200, 0.08);
+$m-3-state-layers-dark-tertiary-opacity-0-12: rgba(239, 184, 200, 0.12);
+$m-3-state-layers-dark-tertiary-opacity-0-16: rgba(239, 184, 200, 0.16);
+$m-3-state-layers-dark-on-tertiary-opacity-0-08: rgba(73, 37, 50, 0.08);
+$m-3-state-layers-dark-on-tertiary-opacity-0-12: rgba(73, 37, 50, 0.12);
+$m-3-state-layers-dark-on-tertiary-opacity-0-16: rgba(73, 37, 50, 0.16);
+$m-3-state-layers-dark-tertiary-container-opacity-0-08: rgba(99, 59, 72, 0.08);
+$m-3-state-layers-dark-tertiary-container-opacity-0-12: rgba(99, 59, 72, 0.12);
+$m-3-state-layers-dark-tertiary-container-opacity-0-16: rgba(99, 59, 72, 0.16);
+$m-3-state-layers-dark-on-tertiary-container-opacity-0-08: rgba(
+  255,
+  216,
+  228,
+  0.08
+);
+$m-3-state-layers-dark-on-tertiary-container-opacity-0-12: rgba(
+  255,
+  216,
+  228,
+  0.12
+);
+$m-3-state-layers-dark-on-tertiary-container-opacity-0-16: rgba(
+  255,
+  216,
+  228,
+  0.16
+);
+$m-3-state-layers-dark-tertiary-fixed-opacity-0-08: rgba(255, 216, 228, 0.08);
+$m-3-state-layers-dark-tertiary-fixed-opacity-0-12: rgba(255, 216, 228, 0.12);
+$m-3-state-layers-dark-tertiary-fixed-opacity-0-16: rgba(255, 216, 228, 0.16);
+$m-3-state-layers-dark-on-tertiary-fixed-opacity-0-08: rgba(49, 17, 29, 0.08);
+$m-3-state-layers-dark-on-tertiary-fixed-opacity-0-12: rgba(49, 17, 29, 0.12);
+$m-3-state-layers-dark-on-tertiary-fixed-opacity-0-16: rgba(49, 17, 29, 0.16);
+$m-3-state-layers-dark-tertiary-fixed-dim-opacity-0-08: rgba(
+  239,
+  184,
+  200,
+  0.08
+);
+$m-3-state-layers-dark-tertiary-fixed-dim-opacity-0-12: rgba(
+  239,
+  184,
+  200,
+  0.12
+);
+$m-3-state-layers-dark-tertiary-fixed-dim-opacity-0-16: rgba(
+  239,
+  184,
+  200,
+  0.16
+);
+$m-3-state-layers-dark-on-tertiary-fixed-variant-opacity-0-08: rgba(
+  99,
+  59,
+  72,
+  0.08
+);
+$m-3-state-layers-dark-on-tertiary-fixed-variant-opacity-0-12: rgba(
+  99,
+  59,
+  72,
+  0.12
+);
+$m-3-state-layers-dark-on-tertiary-fixed-variant-opacity-0-16: rgba(
+  99,
+  59,
+  72,
+  0.16
+);
+$m-3-state-layers-dark-error-opacity-0-08: rgba(242, 184, 181, 0.08);
+$m-3-state-layers-dark-error-opacity-0-12: rgba(242, 184, 181, 0.12);
+$m-3-state-layers-dark-error-opacity-0-16: rgba(242, 184, 181, 0.16);
+$m-3-state-layers-dark-on-error-opacity-0-08: rgba(96, 20, 16, 0.08);
+$m-3-state-layers-dark-on-error-opacity-0-12: rgba(96, 20, 16, 0.12);
+$m-3-state-layers-dark-on-error-opacity-0-16: rgba(96, 20, 16, 0.16);
+$m-3-state-layers-dark-error-container-opacity-0-08: rgba(140, 29, 24, 0.08);
+$m-3-state-layers-dark-error-container-opacity-0-12: rgba(140, 29, 24, 0.12);
+$m-3-state-layers-dark-error-container-opacity-0-16: rgba(140, 29, 24, 0.16);
+$m-3-state-layers-dark-on-error-container-opacity-0-08: rgba(
+  249,
+  222,
+  220,
+  0.08
+);
+$m-3-state-layers-dark-on-error-container-opacity-0-12: rgba(
+  249,
+  222,
+  220,
+  0.12
+);
+$m-3-state-layers-dark-on-error-container-opacity-0-16: rgba(
+  249,
+  222,
+  220,
+  0.16
+);
+$m-3-state-layers-dark-outline-opacity-0-08: rgba(147, 143, 153, 0.08);
+$m-3-state-layers-dark-outline-opacity-0-12: rgba(147, 143, 153, 0.12);
+$m-3-state-layers-dark-outline-opacity-0-16: rgba(147, 143, 153, 0.16);
+$m-3-state-layers-dark-background-opacity-0-08: rgba(20, 18, 24, 0.08);
+$m-3-state-layers-dark-background-opacity-0-12: rgba(20, 18, 24, 0.12);
+$m-3-state-layers-dark-background-opacity-0-16: rgba(20, 18, 24, 0.16);
+$m-3-state-layers-dark-on-background-opacity-0-08: rgba(230, 224, 233, 0.08);
+$m-3-state-layers-dark-on-background-opacity-0-12: rgba(230, 224, 233, 0.12);
+$m-3-state-layers-dark-on-background-opacity-0-16: rgba(230, 224, 233, 0.16);
+$m-3-state-layers-dark-surface-opacity-0-08: rgba(20, 18, 24, 0.08);
+$m-3-state-layers-dark-surface-opacity-0-12: rgba(20, 18, 24, 0.12);
+$m-3-state-layers-dark-surface-opacity-0-16: rgba(20, 18, 24, 0.16);
+$m-3-state-layers-dark-on-surface-opacity-0-08: rgba(230, 224, 233, 0.08);
+$m-3-state-layers-dark-on-surface-opacity-0-12: rgba(230, 224, 233, 0.12);
+$m-3-state-layers-dark-on-surface-opacity-0-16: rgba(230, 224, 233, 0.16);
+$m-3-state-layers-dark-surface-variant-opacity-0-08: rgba(73, 69, 79, 0.08);
+$m-3-state-layers-dark-surface-variant-opacity-0-12: rgba(73, 69, 79, 0.12);
+$m-3-state-layers-dark-surface-variant-opacity-0-16: rgba(73, 69, 79, 0.16);
+$m-3-state-layers-dark-on-surface-variant-opacity-0-08: rgba(
+  202,
+  196,
+  208,
+  0.08
+);
+$m-3-state-layers-dark-on-surface-variant-opacity-0-12: rgba(
+  202,
+  196,
+  208,
+  0.12
+);
+$m-3-state-layers-dark-on-surface-variant-opacity-0-16: rgba(
+  202,
+  196,
+  208,
+  0.16
+);
+$m-3-state-layers-dark-inverse-surface-opacity-0-08: rgba(230, 224, 233, 0.08);
+$m-3-state-layers-dark-inverse-surface-opacity-0-12: rgba(230, 224, 233, 0.12);
+$m-3-state-layers-dark-inverse-surface-opacity-0-16: rgba(230, 224, 233, 0.16);
+$m-3-state-layers-dark-inverse-on-surface-opacity-0-08: rgba(50, 47, 53, 0.08);
+$m-3-state-layers-dark-inverse-on-surface-opacity-0-12: rgba(50, 47, 53, 0.12);
+$m-3-state-layers-dark-inverse-on-surface-opacity-0-16: rgba(50, 47, 53, 0.16);
+$m-3-state-layers-dark-inverse-primary-opacity-0-08: rgba(103, 80, 164, 0.08);
+$m-3-state-layers-dark-inverse-primary-opacity-0-12: rgba(103, 80, 164, 0.12);
+$m-3-state-layers-dark-inverse-primary-opacity-0-16: rgba(103, 80, 164, 0.16);
+$m-3-state-layers-dark-shadow-opacity-0-08: rgba(0, 0, 0, 0.08);
+$m-3-state-layers-dark-shadow-opacity-0-12: rgba(0, 0, 0, 0.12);
+$m-3-state-layers-dark-shadow-opacity-0-16: rgba(0, 0, 0, 0.16);
+$m-3-state-layers-dark-surface-tint-opacity-0-08: rgba(208, 188, 255, 0.08);
+$m-3-state-layers-dark-surface-tint-opacity-0-12: rgba(208, 188, 255, 0.12);
+$m-3-state-layers-dark-surface-tint-opacity-0-16: rgba(208, 188, 255, 0.16);
+$m-3-state-layers-dark-outline-variant-opacity-0-08: rgba(73, 69, 79, 0.08);
+$m-3-state-layers-dark-outline-variant-opacity-0-12: rgba(73, 69, 79, 0.12);
+$m-3-state-layers-dark-outline-variant-opacity-0-16: rgba(73, 69, 79, 0.16);
+$m-3-state-layers-dark-scrim-opacity-0-08: rgba(0, 0, 0, 0.08);
+$m-3-state-layers-dark-scrim-opacity-0-12: rgba(0, 0, 0, 0.12);
+$m-3-state-layers-dark-scrim-opacity-0-16: rgba(0, 0, 0, 0.16);
+$m-3-state-layers-dark-surface-container-highest-opacity-0-08: rgba(
+  54,
+  52,
+  59,
+  0.08
+);
+$m-3-state-layers-dark-surface-container-highest-opacity-0-12: rgba(
+  54,
+  52,
+  59,
+  0.12
+);
+$m-3-state-layers-dark-surface-container-highest-opacity-0-16: rgba(
+  54,
+  52,
+  59,
+  0.16
+);
+$m-3-state-layers-dark-surface-container-high-opacity-0-08: rgba(
+  43,
+  41,
+  48,
+  0.08
+);
+$m-3-state-layers-dark-surface-container-high-opacity-0-12: rgba(
+  43,
+  41,
+  48,
+  0.12
+);
+$m-3-state-layers-dark-surface-container-high-opacity-0-16: rgba(
+  43,
+  41,
+  48,
+  0.16
+);
+$m-3-state-layers-dark-surface-container-opacity-0-08: rgba(33, 31, 38, 0.08);
+$m-3-state-layers-dark-surface-container-opacity-0-12: rgba(33, 31, 38, 0.12);
+$m-3-state-layers-dark-surface-container-opacity-0-16: rgba(33, 31, 38, 0.16);
+$m-3-state-layers-dark-surface-container-low-opacity-0-08: rgba(
+  29,
+  27,
+  32,
+  0.08
+);
+$m-3-state-layers-dark-surface-container-low-opacity-0-12: rgba(
+  29,
+  27,
+  32,
+  0.12
+);
+$m-3-state-layers-dark-surface-container-low-opacity-0-16: rgba(
+  29,
+  27,
+  32,
+  0.16
+);
+$m-3-state-layers-dark-surface-container-lowest-opacity-0-08: rgba(
+  15,
+  13,
+  19,
+  0.08
+);
+$m-3-state-layers-dark-surface-container-lowest-opacity-0-12: rgba(
+  15,
+  13,
+  19,
+  0.12
+);
+$m-3-state-layers-dark-surface-container-lowest-opacity-0-16: rgba(
+  15,
+  13,
+  19,
+  0.16
+);
+$m-3-state-layers-dark-surface-bright-opacity-0-08: rgba(59, 56, 62, 0.08);
+$m-3-state-layers-dark-surface-bright-opacity-0-12: rgba(59, 56, 62, 0.12);
+$m-3-state-layers-dark-surface-bright-opacity-0-16: rgba(59, 56, 62, 0.16);
+$m-3-state-layers-dark-surface-dim-opacity-0-08: rgba(20, 18, 24, 0.08);
+$m-3-state-layers-dark-surface-dim-opacity-0-12: rgba(20, 18, 24, 0.12);
+$m-3-state-layers-dark-surface-dim-opacity-0-16: rgba(20, 18, 24, 0.16);
+
+/* Fonts */
+$m-3-display-large-font-family: Roboto-Regular, sans-serif;
+$m-3-display-large-font-size: 57px;
+$m-3-display-large-line-height: 64px;
+$m-3-display-large-font-weight: 400;
+$m-3-display-large-font-style: normal;
+$m-3-display-medium-font-family: Roboto-Regular, sans-serif;
+$m-3-display-medium-font-size: 45px;
+$m-3-display-medium-line-height: 52px;
+$m-3-display-medium-font-weight: 400;
+$m-3-display-medium-font-style: normal;
+$m-3-display-small-font-family: Roboto-Regular, sans-serif;
+$m-3-display-small-font-size: 36px;
+$m-3-display-small-line-height: 44px;
+$m-3-display-small-font-weight: 400;
+$m-3-display-small-font-style: normal;
+$m-3-headline-large-font-family: Roboto-Regular, sans-serif;
+$m-3-headline-large-font-size: 32px;
+$m-3-headline-large-line-height: 40px;
+$m-3-headline-large-font-weight: 400;
+$m-3-headline-large-font-style: normal;
+$m-3-headline-medium-font-family: Roboto-Regular, sans-serif;
+$m-3-headline-medium-font-size: 28px;
+$m-3-headline-medium-line-height: 36px;
+$m-3-headline-medium-font-weight: 400;
+$m-3-headline-medium-font-style: normal;
+$m-3-headline-small-font-family: Roboto-Regular, sans-serif;
+$m-3-headline-small-font-size: 24px;
+$m-3-headline-small-line-height: 32px;
+$m-3-headline-small-font-weight: 400;
+$m-3-headline-small-font-style: normal;
+$m-3-title-large-font-family: Roboto-Regular, sans-serif;
+$m-3-title-large-font-size: 22px;
+$m-3-title-large-line-height: 28px;
+$m-3-title-large-font-weight: 400;
+$m-3-title-large-font-style: normal;
+$m-3-title-medium-font-family: Roboto-Medium, sans-serif;
+$m-3-title-medium-font-size: 16px;
+$m-3-title-medium-line-height: 24px;
+$m-3-title-medium-font-weight: 500;
+$m-3-title-medium-font-style: normal;
+$m-3-title-small-font-family: Roboto-Medium, sans-serif;
+$m-3-title-small-font-size: 14px;
+$m-3-title-small-line-height: 20px;
+$m-3-title-small-font-weight: 500;
+$m-3-title-small-font-style: normal;
+$m-3-body-large-font-family: Roboto-Regular, sans-serif;
+$m-3-body-large-font-size: 16px;
+$m-3-body-large-line-height: 24px;
+$m-3-body-large-font-weight: 400;
+$m-3-body-large-font-style: normal;
+$m-3-body-medium-font-family: Roboto-Regular, sans-serif;
+$m-3-body-medium-font-size: 14px;
+$m-3-body-medium-line-height: 20px;
+$m-3-body-medium-font-weight: 400;
+$m-3-body-medium-font-style: normal;
+$m-3-body-small-font-family: Roboto-Regular, sans-serif;
+$m-3-body-small-font-size: 12px;
+$m-3-body-small-line-height: 16px;
+$m-3-body-small-font-weight: 400;
+$m-3-body-small-font-style: normal;
+$m-3-label-large-prominent-font-family: Roboto-SemiBold, sans-serif;
+$m-3-label-large-prominent-font-size: 14px;
+$m-3-label-large-prominent-line-height: 20px;
+$m-3-label-large-prominent-font-weight: 600;
+$m-3-label-large-prominent-font-style: normal;
+$m-3-label-large-font-family: Roboto-Medium, sans-serif;
+$m-3-label-large-font-size: 14px;
+$m-3-label-large-line-height: 20px;
+$m-3-label-large-font-weight: 500;
+$m-3-label-large-font-style: normal;
+$m-3-label-medium-prominent-font-family: Roboto-SemiBold, sans-serif;
+$m-3-label-medium-prominent-font-size: 12px;
+$m-3-label-medium-prominent-line-height: 16px;
+$m-3-label-medium-prominent-font-weight: 600;
+$m-3-label-medium-prominent-font-style: normal;
+$m-3-label-medium-font-family: Roboto-Medium, sans-serif;
+$m-3-label-medium-font-size: 12px;
+$m-3-label-medium-line-height: 16px;
+$m-3-label-medium-font-weight: 500;
+$m-3-label-medium-font-style: normal;
+$m-3-label-small-font-family: Roboto-Medium, sans-serif;
+$m-3-label-small-font-size: 11px;
+$m-3-label-small-line-height: 16px;
+$m-3-label-small-font-weight: 500;
+$m-3-label-small-font-style: normal;
+
+/* Effects */
+$m-3-elevation-light-1-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15),
+  0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+$m-3-elevation-light-2-box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15),
+  0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+$m-3-elevation-light-3-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+$m-3-elevation-light-4-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+$m-3-elevation-light-5-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+  0px 8px 12px 6px rgba(0, 0, 0, 0.15);
+$m-3-elevation-dark-1-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+  0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+$m-3-elevation-dark-2-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.3),
+  0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+$m-3-elevation-dark-3-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+$m-3-elevation-dark-4-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3),
+  0px 6px 10px 4px rgba(0, 0, 0, 0.15);
+$m-3-elevation-dark-5-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
+  0px 8px 12px 6px rgba(0, 0, 0, 0.15);
