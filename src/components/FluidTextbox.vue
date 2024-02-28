@@ -4,11 +4,11 @@
       <div 
         contenteditable="true" 
         class="text editable"
-        
         @input="updateSuggestions" 
         @keydown="handleKeydown"
         v-html="modelValue"
         @focus="$emit('focus', $event)"
+        @blur="onBlur"
         ref="editable">
       </div>
 
@@ -31,7 +31,7 @@
   
   export default {
     name: 'FluidTextbox',
-    emits: ['update:modelValue', 'focus'],
+    emits: ['update:modelValue', 'focus', 'blur'],
     props: {
       maxTotalCharacters: {
         type: Number,
@@ -48,11 +48,13 @@
         removable: {
             type: Boolean,
             default: false
-        }
+        },
+        suggestions: {
+            type: Array,
+            default: () => []
+        },
     },
-    emits: ['update:modelValue'],
     setup(props, { emit }) {
-      const suggestions = ['apple', 'banana', 'orange', 'grape', 'strawberry'];
       const state = reactive({
         filteredSuggestions: [],
         showSuggestions: false,
@@ -66,15 +68,13 @@
         const text = ev.target.innerText;
         const currentWord = text.split(' ').pop().toLowerCase();
         console.log({text, currentWord})
-        if (currentWord) {
-          state.filteredSuggestions = suggestions.filter(suggestion => {
-            console.log('match check', {suggestion, currentWord, check: suggestion.toLowerCase().startsWith(currentWord)})
-            return suggestion.toLowerCase().startsWith(currentWord);
+
+        state.filteredSuggestions = props.suggestions.filter(suggestion => {
+          console.log('match check', {suggestion, currentWord, check: !currentWord || suggestion.toLowerCase().startsWith(currentWord)})
+          return !currentWord || suggestion.toLowerCase().startsWith(currentWord);
         });
-          state.showSuggestions = state.filteredSuggestions.length > 0;
-        } else {
-          state.showSuggestions = false;
-        }
+        console.log('filtered', state.filteredSuggestions)
+        state.showSuggestions = state.filteredSuggestions.length > 0;
       };
   
       const selectSuggestion = suggestion => {
@@ -117,8 +117,13 @@
         editable.value.innerText = newValue;
       }
     });
+
+    const onBlur = (ev) => { 
+      state.showSuggestions = false;
+      emit('blur', ev);
+    }
   
-      return { editable, state, updateSuggestions, selectSuggestion, handleKeydown,  };
+      return { editable, state, updateSuggestions, selectSuggestion, handleKeydown, onBlur  };
     }
   };
   </script>
@@ -151,7 +156,10 @@
     background: white;
     border: 1px solid #ccc;
     position: absolute;
-    width: 300px;
+    width: 100%;
+    top: calc(100% - 3px);
+    border-radius: 4px;
+    z-index: 99;
   }
   
   .suggestions li {

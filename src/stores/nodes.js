@@ -19,7 +19,7 @@ export const useNodesStore = defineStore('nodes', {
             this.path = path
         },
         findPath(nodes, targetId, currentPath = []) {
-            console.log('findpath', nodes, targetId, currentPath)
+            // console.log('findpath', nodes, targetId, currentPath)
             for (const node of nodes) {
                 // Check if the current node is the target node
                 if (node.id === targetId) {

@@ -1,5 +1,5 @@
 <template>
-    <div id="app" class="tree" :style="{width: fullWidth}">
+    <div id="app" class="tree" :style="{width: null /* not fullWidth */ }">
       
         <ul class="tree-list">
           <li class="tree-list-item start">
@@ -24,7 +24,7 @@
 
         <RouterView />
 
-        <ReviewPanel v-if="false" :journey="journey" />
+        <ReviewPanel :journey="journey" />
     </div>
   </template>
   
@@ -107,7 +107,9 @@
               //delete items[index];
             }
             else {
-              items[index] = updatedNode;
+              console.log('findthis', index, items[index], updatedNode)
+              return;
+              //items[index] = updatedNode;
             }
             console.log('updated', id, updatedNode, this.journey)
             return;
@@ -124,7 +126,7 @@
         console.log('removed', this.journey)
       },
       handleNodeUpdate(updatedNode) {
-        console.log('update node', updatedNode, )
+        console.log('update node1', JSON.parse(JSON.stringify(updatedNode)) )
         this.updateWidth();
 
         this.findAndUpdateJourneyItem(this.journey, updatedNode.id, updatedNode);

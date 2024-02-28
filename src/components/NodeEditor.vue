@@ -21,20 +21,22 @@
         <FluidTextbox v-for="(item, index) in tempContent" :key="index"
           :removable="tempContent.length > 1"
           :maxWidth="320" :maxTotalCharacters="80"
-           v-model="item.content" @input="inputChange(index, $event.target.value)"
+           v-model="item.content"
            :placeholder="placeholder" 
            ref="inputs" 
-           @focus="setSuggestions"
+           @blur="onAnswerItemBlur(index)"
         />
       </div>
       
       <FluidTextbox v-else-if="localNode.type" 
         :temp-type="localNode.type"
         :maxWidth="400" :maxTotalCharacters="201"
-        v-model="tempContent" @input="inputChange(index, $event.target.value)"
+        v-model="tempContent"
         :placeholder="placeholder" 
         ref="inputs[0]"
-        @focus="focus"
+        @focus="setSuggestions"
+        :suggestions="suggestedQuestions"
+        @blur="checkToUpdate(0)"
       />
 
       <button @focus="focus" v-if="localNode.type === 'question'" class="add" @click="addAnswer"></button>
@@ -47,7 +49,7 @@
         :classes="{ 'tree-list-item': true, 'only-child': filteredChildren.length === 1 }" 
         v-for="(child, index) in filteredChildren" 
         :style="{ paddingTop: styles.listPaddingTop }"
-        :key="index" :index="index" 
+        :key="child.id" :index="index" 
         :node="child" 
         @updateNode="updateNode"
         @removeNode="removeAnswer"
@@ -100,7 +102,10 @@ export default {
     }));
 
     const focused = computed(() => nodesStore.focused === localNode.value.id);
-    const filteredChildren = computed(() => props.forPanel ? localNode.value.children.filter(child => nodesStore.path.includes(child.id)) : localNode.value.children);
+    const filteredChildren = computed(() => {
+      console.log('compute filtered', localNode.value, nodesStore.path);
+      return props.forPanel ? localNode.value.children.filter(child => nodesStore.path.includes(child.id)) : localNode.value.children;
+    });
 
     const styles = computed(() => {
       if (!root.value) return {};
@@ -121,7 +126,7 @@ export default {
 
       // console.log('compareme', heightDiff)
 
-      const listPaddingTop = heightDiff ? (heightDiff + 20) + 'px' : null;
+      const listPaddingTop = !props.forPanel ? (heightDiff ? (heightDiff + 20) + 'px' : null) : null;
       const baseHeight = isQuestion ? 16 : 36;
       const connectorHeight = heightDiff ? (heightDiff + baseHeight) + 'px' : null;
 
@@ -152,27 +157,27 @@ export default {
     });
 
     watch(() => props.node, (newVal) => {
+      console.log('localnode update', newVal)
       localNode.value = newVal; // Update the local node reactively
     }, { deep: true, immediate: true });
 
     const setSuggestions = () => {
       focus();
 
-      inputs.value[0].select();
+      //inputs.value[0].select();
       suggestedQuestions.value = props.suggestQuestions(localNode.value.id);
       console.log('set suggested', localNode.value.id, suggestedQuestions.value)
     };
 
-    const updateNode = (value, test, bubbled=false) => {
-      if (!value) 
-        value = localNode.value;
-
-      console.log('update node', value, localNode.value, test, bubbled)
-      if (bubbled) {
+    const updateNode = (value, bubbled=0) => {
+      //console.log('update node', value, localNode.value, test, bubbled)
+      if (bubbled === 1) {
         const index = localNode.value.children.findIndex(child => child.id === value.id);
         if (index !== -1) localNode.value.children[index] = value;
+        else console.error('Could not find child to update', value);
       }
-      emit('update-node', value, test, true);
+      emit('update-node', value, true);
+      
     };
 
     const getDefaultAnswer = () => {
@@ -193,7 +198,7 @@ export default {
 
     const addAnswer = () => {
       localNode.value.children.push(getDefaultAnswer());
-      updateNode(null, 'answer');
+      updateNode(localNode.value);
 
       nextTick(() => {
         console.log('answermethis', childRefs.value[localNode.value.children.length - 1].inputs, childRefs.value)
@@ -209,18 +214,12 @@ export default {
     const addAnswerItem = () => {
       tempContent.value.push({ content: '' });
       localNode.value.content.push('');
-      updateNode(null, 'answer');
+      updateNode(localNode.value);
 
       nextTick(() => {
-        console.log('answermethis', inputs.value, inputs.value.length-1)
+        console.log('answermethis', inputs.value[inputs.value.length-1].$el.firstElementChild, inputs.value, inputs.value.length-1)
         inputs.value[inputs.value.length-1].$el.firstElementChild.focus();
-
-        setTimeout(() => {
-          console.log('try', childRefs.value[localNode.value.children.length - 1].$el);
-          childRefs.value[localNode.value.children.length - 1].$el.scrollIntoView({ behavior: 'smooth' });
-        }, 100);
       });
-      
     };
 
     const removeAnswer = (id) => {
@@ -274,7 +273,7 @@ export default {
         }
       }
 
-      updateNode(null, 'change');
+      updateNode(localNode.value);
 
       nextTick(() => {
         inputs.value[0].focus();
@@ -310,15 +309,14 @@ export default {
       //el.addEventListener('transitionend', done, { once: true });
     };
 
-    const inputChange = (index, newValue) => {
-      // console.log('inputchange', localNode.value.content, index, newValue)
-      // Update the specific item in tempContent
-      tempContent.value[index].content = newValue;
-      // Optionally, emit an event or call a method to handle the change
+    const checkToUpdate = () => {
+      console.log('checkToUpdate', JSON.parse(JSON.stringify(localNode.value)), JSON.parse(JSON.stringify(tempContent.value)))
+      localNode.value.content = tempContent.value;
 
-      localNode.value.content = [tempContent.value];
-      updateNode(null, 'input');
+      updateNode(localNode.value);
     };
+
+    
 
 const findParallelHierarchyNodes = (root, selector) => {
   let currentElement = root;
@@ -370,7 +368,16 @@ function findDescendantsAtLevel(ancestor, selector, level) {
   const focus = () => {
     console.log('FOCUS', localNode.value.id, nodesStore.focused)
     nodesStore.setFocused(localNode.value.id);
+  };
 
+  const onAnswerItemBlur = (idx) => {
+    console.log('blur check', idx, tempContent.value[idx], tempContent.value)
+    const tempValue = tempContent.value;
+    if (tempValue.length > 1 && tempValue[idx].content === '') {
+      tempValue.splice(idx, 1);
+      localNode.value.splice(idx, 1);
+      updateNode(localNode.value);
+    }
   };
 
     return { 
@@ -382,7 +389,7 @@ function findDescendantsAtLevel(ancestor, selector, level) {
       addAnswer,
       removeAnswer,
       typeChange,
-      inputChange,
+      checkToUpdate,
       tempContent,
       suggestedQuestions,
       setSuggestions,
@@ -396,7 +403,8 @@ function findDescendantsAtLevel(ancestor, selector, level) {
       root, styles,
       onBeforeEnter,
       focus, focused,
-      filteredChildren
+      filteredChildren,
+      onAnswerItemBlur
     };
   }
 };
